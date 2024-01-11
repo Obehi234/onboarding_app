@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:onboarding_app/page_indicator.dart';
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}): super(key: key);
+  const MyHomePage({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
@@ -26,7 +26,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: SafeArea(
           child: Center(
             child:
-                Column(mainAxisAlignment: MainAxisAlignment.start, children: [
+                Column(mainAxisAlignment: MainAxisAlignment.center, children: [
               Image.asset('assets/fans.png'),
               SizedBox(height: 20),
               Text(
@@ -51,7 +51,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   textAlign: TextAlign.center,
                 ),
               ),
-              PageIndicatorDemo(),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 16.0),
+                child: PageIndicatorDemo(),
+              ),
+              ElevatedButton(onPressed: () {}, child: Text('LETS GET STARTED')),
             ]),
           ),
         ));
