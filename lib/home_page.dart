@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:onboarding_app/page_indicator.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -50,6 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   textAlign: TextAlign.center,
                 ),
               ),
+              PageIndicatorDemo(),
             ]),
           ),
         ));
