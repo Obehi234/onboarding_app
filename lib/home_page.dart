@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:onboarding_app/page_indicator.dart';
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+  const MyHomePage({Key? key, required this.title}): super(key: key);
 
   final String title;
 
